@@ -20,8 +20,8 @@ const SearchBar = () => {
 
 
   return (
-    <div>
-        <form 
+    <div className='flex w-full justify-center'>
+      <form 
         onReset={()=>{
           console.log('hello');
           
@@ -29,10 +29,10 @@ const SearchBar = () => {
         onSubmit={ (e) => {
           submitHandler(e)
         }}
-        className="mx-auto flex max-w-4xl items-center rounded-2xl border border-white/10 bg-white/10 p-2 shadow-2xl shadow-purple-900/20 backdrop-blur-xl">
-  
-        <Search color='#62748e' size={23} className='ml-2'/>
-        <input
+        className=" flex lg:w-[60%] md:w-[85%] w-[90%] items-center rounded-2xl border border-white/10 bg-white/10 p-2 shadow-2xl shadow-purple-900/20 backdrop-blur-xl">
+        <div className='flex items-center sm:gap-4 gap-2 w-full'>
+          <Search color='#62748e' size={23} className='ml-2'/>
+          <input
           onChange={ (e) => {
               setText(e.target.value)
           }}
@@ -40,10 +40,11 @@ const SearchBar = () => {
           required
           type="text"
           placeholder='Search photos, videos, GIFs... '
-          className="flex-1 px-4 py-4 text-lg text-white outline-none placeholder:text-slate-500"
-        />
+          className="sm:text-lg text-sm outline-none text-white placeholder:text-slate-500 w-full "
+          />
+        </div>
 
-        <button className="rounded-xl bg-violet-600/80 text-[17px] px-7 py-4 font-semibold transition hover:bg-violet-500/90 hover:shadow-lg hover:shadow-violet-500/30">
+        <button className="rounded-xl bg-violet-600/80 sm:text-[17px] text-sm sm:px-7 sm:py-4 px-6 py-3 font-semibold shadow-md shadow-violet-600/30 transition hover:bg-violet-500/90 hover:shadow-lg hover:shadow-violet-500/30">
           Search
         </button>
 

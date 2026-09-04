@@ -27,7 +27,7 @@ const CollectionPage = () => {
         <div className='flex flex-col items-center justify-center gap-3'>
 
           <section className="px-6 pb-8 pt-12 mt-17 text-center">
-            <h1 className="text-[40px] font-bold tracking-tight text-white/90">
+            <h1 className=" text-[34px] sm:text-[40px] font-bold tracking-tight text-white/90">
               Your Collection
             </h1>
 
