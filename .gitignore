@@ -12,11 +12,8 @@ dist/
 dist-ssr
 *.local
 .env
-<<<<<<< HEAD
 .env.*
 !.env.example
-=======
->>>>>>> origin/main
 .env.local
 
 # Editor directories and files
